@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 7 - Web Animations and Storage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home" id="homeLink">Home</a></li>
+        <li><a href="#features" id="featuresLink">Features</a></li>
+        <li><a href="#contact" id="contactLink">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="theme-toggle">
+      <label for="themeSwitch">Dark Mode</label>
+      <input type="checkbox" id="themeSwitch">
+    </div>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to the Interactive Web Page!</h1>
+    <p>Explore the features below to see animations and save your preferences.</p>
+    
+    <button id="startBtn" class="animateBtn">Click to Start Animation</button>
+    
+    <!-- This box will animate when the button is clicked -->
+    <div id="animateBox" class="box"></div>
+  </section>
+
+  <section id="features">
+    <h2>CSS Animations</h2>
+    <p>Hover over the button to see a smooth animation:</p>
+    <button id="hoverBtn">Hover me!</button>
+
+    <h2>Image Animation</h2>
+    <img src="https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="animImage" alt="Example Image">
+
+    <h2>LocalStorage Feature</h2>
+    <button id="saveBtn">Save Theme Preference</button>
+    <p id="savedMessage"></p>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us: info@webpage.com</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
